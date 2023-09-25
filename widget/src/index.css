@@ -1,0 +1,7 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.loginBg {
+    background: linear-gradient(154deg, #f6f4f1 0%, #ebe4d3 100%);
+}

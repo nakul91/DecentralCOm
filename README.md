@@ -21,12 +21,14 @@ To run this project, there are two parts.
 ### Admin side
 - Navigate into the folder
       `cd admin`
+  
 - Run the command to see the admin sit in your local system - 
    `pnpm install && pnpm run dev`
 
 ### Client side
 - Navigate into the folder
    `cd widget`
+  
 - Run the command to see the website with the widget attached
    `pnpm install && pnpm run dev`
 

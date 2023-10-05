@@ -15,3 +15,14 @@ Are you ready to revolutionize the way you handle customer support? Say hello to
 4. **Developer-Friendly:** StreamrChat Widget provides a developer-friendly environment, allowing you to extend its functionality to meet your unique business needs. Integrate it with your existing systems and tools seamlessly.
 
 Say goodbye to traditional support ticketing systems that eat a lot of data. DecentralCom Widget is the future of customer support, offering a seamless web3 experience that enhances efficiency, security, and customer satisfaction. Join the web3 revolution and elevate your support services to new heights with DecentralCom Widget today!
+
+
+To run this project, there are two parts. 
+### Admin side
+Navigate into the folder - `cd admin`
+Run the command to see the admin sit in your local system - `pnpm install && pnpm run dev`
+
+### Client side
+Navigate into the folder - `cd widget`
+Run the command to see the website with the widget attached - `pnpm install && pnpm run dev`
+

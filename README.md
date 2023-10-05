@@ -16,6 +16,10 @@ Are you ready to revolutionize the way you handle customer support? Say hello to
 
 Say goodbye to traditional support ticketing systems that eat a lot of data. DecentralCom Widget is the future of customer support, offering a seamless web3 experience that enhances efficiency, security, and customer satisfaction. Join the web3 revolution and elevate your support services to new heights with DecentralCom Widget today!
 
+Both the client and admin are deployd below - 
+Client - https://streamr-widget-client.netlify.app/
+Admin - https://streamr-widget-admin.netlify.app/
+
 
 To run this project, there are two parts. 
 ### Admin side

@@ -1,17 +1,20 @@
-import { useEffect, useState } from "react";
 import { Web3Auth } from "@web3auth/modal";
-import styles from "./onboarding.module.css";
-import { getImage } from "../../utils/index";
-import Image from "next/image";
 import { ethers } from "ethers";
-import cardImage from "../../public/images/chat_window.png";
-import arrowRight from "../../public/images/arrow_right_light.svg";
-import copyLight from "../../public/images/copy_light.svg";
-import { QRModal } from "./QRModal";
-import { useRouter } from "next/router";
-import { useCopyToClipboard } from "@/utils/useCopyToClipboard";
-import { userLoggedIn } from "@/utils/atoms";
 import { useAtom } from "jotai";
+import Image from "next/image";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import { CopyBlock, dracula } from "react-code-blocks";
+
+import { userLoggedIn } from "@/utils/atoms";
+import { useCopyToClipboard } from "@/utils/useCopyToClipboard";
+
+import arrowRight from "../../public/images/arrow_right_light.svg";
+import cardImage from "../../public/images/chat_window.png";
+import copyLight from "../../public/images/copy_light.svg";
+import { getImage } from "../../utils/index";
+import styles from "./onboarding.module.css";
+import { QRModal } from "./QRModal";
 
 //Initialize within your constructor
 let web3auth;
@@ -120,7 +123,7 @@ function onboarding() {
               />
             </div>
           </div>
-          <div className="px-1 pr-1 pl-10 flex bg-[#2C2D4A] border border-[#3035DF] rounded-[40px] items-center justify-between">
+          <div className="">
             {!isBalAvail ? (
               <>
                 <p className="text-[#EBEBEB] text-[20px] py-5">
@@ -154,7 +157,17 @@ function onboarding() {
               //     </button>
               //   </div>
               // </div>
-              <ShowScriptToCopy showCopy={showCopy}></ShowScriptToCopy>
+              // <ShowScriptToCopy showCopy={showCopy}></ShowScriptToCopy>
+              <div className="text-left">
+                <CopyBlock
+                  text={`<script \nsrc='https://ds-storage.sgp1.cdn.digitaloceanspaces.com/streamr/widget.bundle.js'>\n</script> `}
+                  language={"script"}
+                  theme={dracula}
+                  showLineNumbers={false}
+                  wrapLines={true}
+                  codeBlock
+                />
+              </div>
             )}
           </div>
           <div

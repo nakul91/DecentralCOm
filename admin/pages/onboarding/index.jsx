@@ -126,19 +126,21 @@ function onboarding() {
           <div className="">
             {!isBalAvail ? (
               <>
-                <p className="text-[#EBEBEB] text-[20px] py-5">
-                  Add <b>1 MATIC</b> to get started
-                </p>
+                <div className="px-1 pr-1 pl-10 flex bg-[#2C2D4A] border border-[#3035DF] rounded-[40px] items-center justify-between">
+                  <p className="text-[#EBEBEB] text-[20px] py-5">
+                    Add <b>1 MATIC</b> to get started
+                  </p>
 
-                <button
-                  className="w-[30%] h-full bg-[#EB6201] text-white rounded-[40px] py-4 text-[20px] flex gap-2 items-center justify-center"
-                  onClick={() => {
-                    setOpen(true);
-                  }}
-                >
-                  <p className="">Deposit</p>
-                  <Image src={arrowRight} alt="arrow" />
-                </button>
+                  <button
+                    className="w-[30%] h-full bg-[#EB6201] text-white rounded-[40px] py-4 text-[20px] flex gap-2 items-center justify-center"
+                    onClick={() => {
+                      setOpen(true);
+                    }}
+                  >
+                    <p className="">Deposit</p>
+                    <Image src={arrowRight} alt="arrow" />
+                  </button>
+                </div>
               </>
             ) : (
               // <div className="flex items-center justify-between w-full">
